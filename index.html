@@ -9,19 +9,19 @@
 
 </head>
 <body>
-
-  <div class="flex-container">
+  <div class="flex-container-fixed">
+    <div class="horizontal">
   <form id="hero-inputs">
     <div id="form-wrapper">
 
       <div class="form-item">
         <label for="heroName">Hero's Name</label>
-        <input type="text" id="heroName" value="spam">
+        <input type="text" id="heroName" value="spam" required>
       </div>
 
       <div class="form-item">
         <label for="heroUniverse">Hero's Universe</label>
-        <input type="text" id="heroUniverse" value="spam">
+        <input type="text" id="heroUniverse" value="spam" required>
       </div>
 
       <div class="form-item">
@@ -36,6 +36,14 @@
       </div>
 
       <div class="form-item">
+        <p>Starting Equipment</p>
+        <input type="radio" name="equipment" id="equipment1" value="hat" checked>
+        <label for="equipment1">hat</label>
+        <input type="radio" name="equipment" id="equipment2" value="gloves">
+        <label for="equipment2">gloves</label>
+      </div>
+
+      <div class="form-item">
         <input type="submit" value="save">
       </div>
 
@@ -47,22 +55,41 @@
   </form>
   </div>
 
-  <div class="body1">
+  <div class="horizontal">
+    <form id="form-background">
+
+      <div class="form-item">
+      <input type="radio" name="backgroundChange" id="background1" value="url('starcraftWallpaper.jpg')" checked>
+      <label for="background1">Zerg</label>
+      <input type="radio" name="backgroundChange" id="background2" value="url(protosWallpaper.jpg)">
+      <label for="background2">Protos</label>
+      <input type="radio" name="backgroundChange" id="background3" value="url(terranWallpaper.jpg)">
+      <label for="background3">Terran</label>
+      </div>
+
+      <div class="form-item">
+        <input type="submit" value="save">
+      </div>
+
+    </form>
+  </div>
+  </div>
+
   <div>
     <input type="button" onclick="alert('Hello World!')" value="Click Me!">
 
   </div>
 
-  <h1>Below This should be a list of heroes</h1>
+  <!-- <h1>Below This should be a list of heroes</h1> -->
 
 
   <div class="flex-container">
 
     <div style= "flex-grow: 1"></div>
 
-      <div class="tempBackground" id="hero-list">
+      <div id="hero-list">
 
-        <div class="hero-details">
+        <!-- <div class="hero-details">
           <div class="heroName">Thrall</div>
           <div class="heroUniverse">Warcraft</div>
           <div class="heroRole">Damage</div>
@@ -78,14 +105,15 @@
           <div class="heroName">Artanis</div>
           <div class="heroUniverse">Starcraft</div>
           <div class="heroRole">Damage</div>
-        </div>
+        </div> -->
 
       </div>
+
       <div style= "flex-grow: 1"></div>
 
   </div>
 
-  </div>
 
 </body>
+
 </html>
