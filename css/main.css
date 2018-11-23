@@ -1,0 +1,99 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.horizontal{
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+body{
+  font-family: helvetica;
+
+  color: white;
+  background:url('starcraftWallpaper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+form{
+  background-color: rgb(12, 17, 40);
+
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0px;
+}
+#form-wrapper{
+padding:5px;
+}
+.form-item{
+  padding:15px;
+  padding-top: 5px;
+}
+
+.tempBackground {
+  /* opacity: 0.8; */
+  /* max-width: 50px; */
+}
+
+.body1{
+
+
+  /* height: 1000px */
+
+}
+
+#hero-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  flex: 66%;
+  margin: 2px;
+
+
+}
+
+.hero-details{
+  background-color: white;
+  opacity: 1;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-align: center;
+  width: 30%;
+  color: blue;
+}
+
+.heroName {
+  font-size: 2.0rem;
+}
+
+.heroUniverse {
+  font-size: 1.3rem;
+}
+
+.heroRole {
+  font-size: 1.3rem;
+  color: blue;
+
+}
+
+h1{
+  font-size: 1.2rem;
+  text-align: center;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Heroes of the Storm App</title>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
+</head>
+<body>
+
+  <div class="flex-container">
+  <form id="hero-inputs">
+    <div id="form-wrapper">
+
+      <div class="form-item">
+        <label for="heroName">Hero's Name</label>
+        <input type="text" id="heroName" value="spam">
+      </div>
+
+      <div class="form-item">
+        <label for="heroUniverse">Hero's Universe</label>
+        <input type="text" id="heroUniverse" value="spam">
+      </div>
+
+      <div class="form-item">
+        <label for="heroRole">Hero's Role</label>
+        <select id="heroRole">
+          <option value="" disabled selected>Role</option>
+          <option value="Tank">Tank</option>
+          <option value="Healer">Healer</option>
+          <option value="Damage">Damage</option>
+          <option value="Specialist">Specialist</option>
+        </select>
+      </div>
+
+      <div class="form-item">
+        <input type="submit" value="save">
+      </div>
+
+      <div class="form-item">
+        <input type="reset">
+      </div>
+
+    </div>
+  </form>
+  </div>
+
+  <div class="body1">
+  <div>
+    <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+  </div>
+
+  <h1>Below This should be a list of heroes</h1>
+
+
+  <div class="flex-container">
+
+    <div style= "flex-grow: 1"></div>
+
+      <div class="tempBackground" id="hero-list">
+
+        <div class="hero-details">
+          <div class="heroName">Thrall</div>
+          <div class="heroUniverse">Warcraft</div>
+          <div class="heroRole">Damage</div>
+        </div>
+
+        <div class="hero-details">
+          <div class="heroName">Azmodan</div>
+          <div class="heroUniverse">Diablo</div>
+          <div class="heroRole">Specialist</div>
+        </div>
+
+        <div class="hero-details">
+          <div class="heroName">Artanis</div>
+          <div class="heroUniverse">Starcraft</div>
+          <div class="heroRole">Damage</div>
+        </div>
+
+      </div>
+      <div style= "flex-grow: 1"></div>
+
+  </div>
+
+  </div>
+
+</body>
+</html>
