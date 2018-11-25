@@ -36,26 +36,34 @@
       </div>
 
       <div class="form-item">
-        <p>Starting Equipment</p>
-        <input type="radio" name="equipment" id="equipment1" value="hat" checked>
-        <label for="equipment1">hat</label>
-        <input type="radio" name="equipment" id="equipment2" value="gloves">
-        <label for="equipment2">gloves</label>
+        <p>starting equipment</p>
+        <input type="checkbox" name="equipment" value="sword" checked> sword<br>
+        <input type="checkbox" name="equipment" value="shield"> shield<br>
+        <input type="checkbox" name="equipment" value="beer"> beer<br>
+      </div>
+
+      <div class="form-item">
+        <p>Starting Perk</p>
+        <input type="radio" name="perk" id="perk1" value="four leaf clover" checked>
+        <label for="perk1">four leaf clover</label>
+        <input type="radio" name="perk" id="perk2" value="lucky rabbit's foot">
+        <label for="perk2">luck rabbit's foot</label>
       </div>
 
       <div class="form-item">
         <input type="submit" value="save">
+        <input type="reset">
       </div>
 
       <div class="form-item">
-        <input type="reset">
+        <button id="delete-all">Delete All</button>
       </div>
 
     </div>
   </form>
   </div>
 
-  <div class="horizontal">
+  <div class="vertical">
     <form id="form-background">
       <div class="form-item">
         <p>Choose your race</p>
@@ -74,7 +82,36 @@
       </div>
 
     </form>
+
+    <div class="not-form">
+      <div class="not-form-item"
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('tank')"> tank</button>
+        <button class="btn" onclick="filterSelection('healer')"> healer</button>
+        <button class="btn" onclick="filterSelection('damage')"> damage</button>
+        <button class="btn" onclick="filterSelection('specialist')"> specialist</button>
+      </div>
+      </div>
+      <!-- <form id="filter-hero-list">
+        <div class="form-item">
+          <label for="heroRoleFilter">Filter by Role</label>
+          <select id="heroRoleFilter">
+            <option value="" disabled selected>Role</option>
+            <option value="Tank">Tank</option>
+            <option value="Healer">Healer</option>
+            <option value="Damage">Damage</option>
+            <option value="Specialist">Specialist</option>
+          </select>
+
+        <div class="form-item">
+          <input type="submit" value="filter">
+        </div>
+        </div>
+      </form> -->
+    </div>
   </div>
+
   </div>
 
   <div>
