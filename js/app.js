@@ -80,6 +80,10 @@ const handlesubmit = function(){
 const handleDeleteAllClick = function (event) {
   const heroList = document.querySelector('#hero-list');
   heroList.innerHTML = '';
+  // cont heroList = document.getElementsByClass("#hero-list");
+  // while (heroList.firstChild){
+  //   heroList.removeChild(heroList.firstChild);
+  // }
 }
 
 
